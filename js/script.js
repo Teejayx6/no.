@@ -7,7 +7,7 @@ $(function()
 		{
 			if (objEvent.shiftKey) 
 			{
-				if (objEvent.keyCode == 73 || objEvent.keyCode == 74) return false; // Disable CTRL + SHIFT + I / J
+			        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
 			} 
 			else 
 			{
